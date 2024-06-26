@@ -1,5 +1,5 @@
 // Add your API endpoint here
-var API_ENDPOINT = "API_ENDPOIND_PASTE_HERE";
+var API_ENDPOINT = "https://jgc0z18xdl.execute-api.us-east-1.amazonaws.com/Prod";
 
 // AJAX POST request to save student data
 document.getElementById("savestudent").onclick = function(){
@@ -10,7 +10,7 @@ document.getElementById("savestudent").onclick = function(){
         "age": $('#age').val()
     };
     $.ajax({
-        url: "https://jgc0z18xdl.execute-api.us-east-1.amazonaws.com/Prod",
+        url: API_ENDPOINT,
         type: 'POST',
         data:  JSON.stringify(inputData),
         contentType: 'application/json; charset=utf-8',
