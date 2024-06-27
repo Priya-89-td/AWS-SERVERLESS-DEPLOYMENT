@@ -26,7 +26,7 @@ document.getElementById("savestudent").onclick = function(){
 // AJAX GET request to retrieve all students
 document.getElementById("getstudents").onclick = function(){  
     $.ajax({
-        url: API_ENDPOINT,
+        url: "API_ENDPOINT",
         type: 'GET',
         contentType: 'application/json; charset=utf-8',
         success: function (response) {
