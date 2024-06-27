@@ -10,7 +10,7 @@ document.getElementById("savestudent").onclick = function(){
         "age": $('#age').val()
     };
     $.ajax({
-        url: API_ENDPOINT,
+        url: "API_ENDPOINT",
         type: 'POST',
         data:  JSON.stringify(inputData),
         contentType: 'application/json; charset=utf-8',
